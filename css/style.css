@@ -1,9 +1,121 @@
 :root {
-  --color-heading: rgb(26, 26, 26);
+  --color-headings: rgb(243, 243, 243);
   --color-primary: rgb(70, 202, 151);
   --color-secondary: rgb(187, 0, 0);
   --color-background-primary: rgb(245, 245, 245);
   --color-background-primary: rgb(218, 218, 218);
+}
+
+*,
+::after,
+::before {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.home__wrap {
+  position: relative;
+  overflow: hidden;
+}
+.home__wrap .home__mask {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.home__wrap .home__bg {
+  background-image: url("/media/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 0px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.home__wrap .home__content {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 4.5rem 0;
+  overflow: hidden;
+  color: var(--color-headings);
+}
+.home__wrap .home__content .container {
+  margin: auto;
+  width: 100%;
+}
+.home__wrap .home__content .container .tx--2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 1.6rem 0;
+}
+.home__wrap .home__content .container .tx--1 {
+  font-size: calc(2rem + 2vw);
+  display: block;
+  font-weight: 600;
+  margin: 0 0 1.6rem 0;
+}
+.home__wrap .home__content .container .tx--3 {
+  font-size: 1.7rem;
+  display: block;
+  margin: 0 0 2.2rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .home__wrap .home__content .container .tx--2 {
+    font-size: 2.5rem;
+  }
+  .home__wrap .home__content .container .tx--1 {
+    font-size: calc(2rem + 2.5vw);
+  }
+  .home__wrap .home__content .container .tx--3 {
+    font-size: 2rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+  text-shadow: none;
+}
+
+.btn--primary {
+  padding: 1.2rem 3rem;
+  font-weight: 500;
+  border-width: 2px;
+  transition: all 0.5s ease;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  border-radius: 50rem;
+  margin-top: 0.5rem;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */
