@@ -41,8 +41,31 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/9a66447899.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <nav id="collapsible" class="nav sticky__top collapsible">
+      <a class="nav__logo" href="/">XUAN CHANG</a>
+      <span class="social__icons">
+        <i class="fab fa-facebook" title="Facebook"></i>
+        <i class="fab fa-twitter" title="Twitter"></i>
+        <i class="fab fa-linkedin" title="Linkedin"></i>
+        <i class="fab fa-instagram" title="Instagram"></i>
+      </span>
+      <i class="fas fa-bars menu__icon nav__toggler" onclick="toggle()"></i>
+      <ul class="nav__list collapsible__content">
+        <li class="nav__items"><a href="#">Home</a></li>
+        <li class="nav__items"><a href="#">About Me</a></li>
+        <li class="nav__items"><a href="#">What I Do</a></li>
+        <li class="nav__items"><a href="#">Resume</a></li>
+        <li class="nav__items"><a href="#">Portfolio</a></li>
+        <li class="nav__items"><a href="#">Testimonial</a></li>
+        <li class="nav__items"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     <section id="home">
       <div class="home__wrap">
         <div class="home__mask"></div>
@@ -57,9 +80,10 @@
         </article>
       </div>
     </section>
+    <section id="about" class="section"></section>
     <section></section>
     <section></section>
     <section></section>
-    <section></section>
+    <script src="/js/main.js"></script>
   </body>
 </html>

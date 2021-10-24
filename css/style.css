@@ -15,6 +15,95 @@
 
 body {
   font-family: "Libre Franklin", sans-serif;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  background: black;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.7rem 1.5rem;
+}
+.nav .nav__logo {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #d8d8d8;
+  font-weight: 600;
+}
+.nav .menu__icon {
+  font-size: 5rem;
+  color: #eeeeee;
+  margin-right: 2rem;
+}
+.nav .menu__icon:hover {
+  color: silver;
+}
+.nav .nav__toggler {
+  opacity: 0.9;
+}
+.nav .nav__list {
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+}
+.nav .nav__items {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #222;
+}
+.nav .nav__items:last-child {
+  border: none;
+  padding-bottom: 1.5rem;
+}
+.nav .nav__items > a {
+  color: #dadada;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: color 0.5s;
+}
+.nav .nav__items > a:hover {
+  color: var(--color-primary);
+}
+.nav .sticky__top {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.nav .social__icons {
+  font-size: 5rem;
+  color: black;
+  margin-left: auto;
+  margin-right: 2rem;
+  opacity: 0.8;
+  color: #e7e7e7;
+}
+.nav .social__icons .fab {
+  padding: 0 0.7rem;
+}
+.nav .social__icons .fa-facebook:hover {
+  color: #4267b2;
+}
+.nav .social__icons .fa-twitter:hover {
+  color: #1da1f2;
+}
+.nav .social__icons .fa-linkedin:hover {
+  color: #0e76a8;
+}
+.nav .social__icons .fa-instagram:hover {
+  color: #8a3ab9;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
 
 .home__wrap {
@@ -116,6 +205,11 @@ body {
   border-radius: 50rem;
   margin-top: 0.5rem;
   box-shadow: none;
+}
+
+.section {
+  padding: 4.5rem 0;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

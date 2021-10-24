@@ -1,0 +1,19 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Let's go",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllenBoxinHao/Project1.git"
+  },
+  "author": "AllenBoxinHao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllenBoxinHao/Project1/issues"
+  },
+  "homepage": "https://github.com/AllenBoxinHao/Project1#readme"
+}
