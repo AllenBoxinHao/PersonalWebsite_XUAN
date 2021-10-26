@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: .7rem 1.5rem;
+  padding: 0.7rem 1.5rem;
 
   .nav__logo {
     font-size: 3rem;
@@ -36,8 +36,8 @@ body {
     font-size: 5rem;
     color: rgb(238, 238, 238);
     margin-right: 2rem;
-    &:hover{
-        color: rgb(192, 192, 192);
+    &:hover {
+      color: rgb(192, 192, 192);
     }
   }
   .nav__toggler {
@@ -76,7 +76,7 @@ body {
     color: black;
     margin-left: auto;
     margin-right: 2rem;
-    opacity: .8;
+    opacity: 0.8;
     .fab {
       padding: 0 0.7rem;
     }
@@ -95,17 +95,17 @@ body {
     }
   }
 }
-.collapsible__content{
-    max-height: 0;
-    overflow: hidden;
-    transition: all .3s ease;
-    opacity: 0;
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
 }
-.collapsible--expanded{
-  .collapsible__content{
-        max-height: 100vh;
-        opacity: 1;
-    }
+.collapsible--expanded {
+  .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
 }
 
 .home__wrap {
