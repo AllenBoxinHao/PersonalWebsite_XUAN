@@ -18,6 +18,11 @@ body {
   margin: 0;
 }
 
+.section {
+  padding: 4.5rem 0;
+  overflow: hidden;
+}
+
 .nav {
   display: flex;
   background: black;
@@ -205,11 +210,6 @@ body {
   border-radius: 50rem;
   margin-top: 0.5rem;
   box-shadow: none;
-}
-
-.section {
-  padding: 4.5rem 0;
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
