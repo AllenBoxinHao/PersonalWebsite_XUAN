@@ -24,12 +24,18 @@ body {
 }
 
 .nav {
+  position: relative;
   display: flex;
+  flex-direction: row;
   background: black;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0.7rem 1.5rem;
+  padding: 1.2rem 1.5rem;
+}
+.nav .sticky__top {
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .nav .nav__logo {
   font-size: 3rem;
@@ -41,6 +47,7 @@ body {
   font-size: 5rem;
   color: #eeeeee;
   margin-right: 2rem;
+  margin-left: auto;
 }
 .nav .menu__icon:hover {
   color: silver;
@@ -70,17 +77,13 @@ body {
 .nav .nav__items > a:hover {
   color: var(--color-primary);
 }
-.nav .sticky__top {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
 .nav .social__icons {
+  position: absolute;
   font-size: 5rem;
   color: black;
-  margin-left: auto;
-  margin-right: 2rem;
   opacity: 0.8;
+  right: 9rem;
+  top: 0;
   color: #e7e7e7;
 }
 .nav .social__icons .fab {
@@ -99,6 +102,11 @@ body {
   color: #8a3ab9;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+  }
+}
 .collapsible__content {
   max-height: 0;
   overflow: hidden;

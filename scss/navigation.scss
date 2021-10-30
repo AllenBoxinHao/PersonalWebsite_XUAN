@@ -1,89 +1,100 @@
 .nav {
-    display: flex;
-    background: rgb(0, 0, 0);
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0.7rem 1.5rem;
-  
-    .nav__logo {
-      font-size: 3rem;
-      text-decoration: none;
-      color: rgb(216, 216, 216);
-      font-weight: 600;
-    }
-    .menu__icon {
-      font-size: 5rem;
-      color: rgb(238, 238, 238);
-      margin-right: 2rem;
-      &:hover {
-        color: rgb(192, 192, 192);
-      }
-    }
-    .nav__toggler {
-      opacity: 0.9;
-    }
-    .nav__list {
-      width: 100%;
-      padding-left: 0;
-      margin: 0;
-    }
-    .nav__items {
-      padding: 0.8rem 0;
-      border-bottom: 1px solid #222;
-    }
-    .nav__items:last-child {
-      border: none;
-      padding-bottom: 1.5rem;
-    }
-    .nav__items > a {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      font-size: 2rem;
-      transition: color 0.5s;
-    }
-    .nav__items > a:hover {
-      color: var(--color-primary);
-    }
-  
-    .sticky__top {
-      position: sticky;
-      top: 0;
-      z-index: 2;
-    }
-    .social__icons {
-      font-size: 5rem;
-      color: black;
-      margin-left: auto;
-      margin-right: 2rem;
-      opacity: 0.8;
-      .fab {
-        padding: 0 0.7rem;
-      }
-      color: rgb(231, 231, 231);
-      .fa-facebook:hover {
-        color: rgb(66, 103, 178);
-      }
-      .fa-twitter:hover {
-        color: rgb(29, 161, 242);
-      }
-      .fa-linkedin:hover {
-        color: rgb(14, 118, 168);
-      }
-      .fa-instagram:hover {
-        color: rgb(138, 58, 185);
-      }
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+
+  .sticky__top {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .nav__logo {
+    font-size: 3rem;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    font-weight: 600;
+  }
+  .menu__icon {
+    font-size: 5rem;
+    color: rgb(238, 238, 238);
+    margin-right: 2rem;
+    margin-left: auto;
+    &:hover {
+      color: rgb(192, 192, 192);
     }
   }
+  .nav__toggler {
+    opacity: 0.9;
+  }
+  .nav__list {
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+  }
+  .nav__items {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #222;
+  }
+  .nav__items:last-child {
+    border: none;
+    padding-bottom: 1.5rem;
+  }
+  .nav__items > a {
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.5s;
+  }
+  .nav__items > a:hover {
+    color: var(--color-primary);
+  }
+
+  .social__icons {
+    position: absolute;
+    font-size: 5rem;
+    color: black;
+    opacity: 0.8;
+    right: 9rem;
+    top: 0;
+    .fab {
+      padding: 0 0.7rem;
+    }
+    color: rgb(231, 231, 231);
+    .fa-facebook:hover {
+      color: rgb(66, 103, 178);
+    }
+    .fa-twitter:hover {
+      color: rgb(29, 161, 242);
+    }
+    .fa-linkedin:hover {
+      color: rgb(14, 118, 168);
+    }
+    .fa-instagram:hover {
+      color: rgb(138, 58, 185);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.collapsible--expanded {
   .collapsible__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    opacity: 0;
+    max-height: 100vh;
+    opacity: 1;
   }
-  .collapsible--expanded {
-    .collapsible__content {
-      max-height: 100vh;
-      opacity: 1;
-    }
-  }
+}
