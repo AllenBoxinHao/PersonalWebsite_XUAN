@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
@@ -23,7 +23,12 @@ body {
   overflow: hidden;
 }
 
-.nav {
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.navigation .nav {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -32,55 +37,53 @@ body {
   align-items: center;
   padding: 1.2rem 1.5rem;
 }
-.nav .sticky__top {
-  position: sticky;
-  top: 0;
-  z-index: 2;
+.navigation .nav .nav__portrait {
+  display: none;
 }
-.nav .nav__logo {
+.navigation .nav .nav__logo {
   font-size: 2.5rem;
   text-decoration: none;
   color: #d8d8d8;
   font-weight: 600;
 }
-.nav .menu__icon {
+.navigation .nav .menu__icon {
   font-size: 5rem;
   color: #eeeeee;
   margin-right: 2rem;
   margin-left: auto;
 }
-.nav .menu__icon:hover {
+.navigation .nav .menu__icon:hover {
   color: silver;
 }
-.nav .nav__toggler {
+.navigation .nav .nav__toggler {
   opacity: 0.9;
 }
-.nav .nav__list {
+.navigation .nav .nav__list {
   width: 100%;
   padding-left: 0;
   margin: 0;
 }
-.nav .nav__items {
+.navigation .nav .nav__items {
   padding: 0.8rem 0;
   border-bottom: 1px solid #222;
 }
-.nav .nav__items:first-child {
+.navigation .nav .nav__items:first-child {
   padding-top: 2.5rem;
 }
-.nav .nav__items:last-child {
+.navigation .nav .nav__items:last-child {
   border: none;
   padding-bottom: 1.5rem;
 }
-.nav .nav__items > a {
+.navigation .nav .nav__items > a {
   color: #dadada;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   transition: color 0.5s;
 }
-.nav .nav__items > a:hover {
+.navigation .nav .nav__items > a:hover {
   color: var(--color-primary);
 }
-.nav .social__icons {
+.navigation .nav .social__icons {
   position: absolute;
   font-size: 5rem;
   color: black;
@@ -89,28 +92,32 @@ body {
   top: 0;
   color: #e7e7e7;
 }
-.nav .social__icons .fab {
+.navigation .nav .social__icons .fab {
   padding: 0 0.7rem;
 }
-.nav .social__icons .fa-facebook:hover {
+.navigation .nav .social__icons .fa-facebook:hover {
   color: #4267b2;
 }
-.nav .social__icons .fa-twitter:hover {
+.navigation .nav .social__icons .fa-twitter:hover {
   color: #1da1f2;
 }
-.nav .social__icons .fa-linkedin:hover {
+.navigation .nav .social__icons .fa-linkedin:hover {
   color: #0e76a8;
 }
-.nav .social__icons .fa-instagram:hover {
+.navigation .nav .social__icons .fa-instagram:hover {
   color: #8a3ab9;
 }
 
 @media screen and (min-width: 1024px) {
   .content {
     display: flex;
+    justify-content: flex-end;
   }
   .content .navigation {
     width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   .content .navigation .nav {
     flex-direction: column;
@@ -121,8 +128,26 @@ body {
     right: auto;
     top: auto;
   }
-  .content .navigation .nav__toggler {
+  .content .navigation .nav .nav__toggler {
     display: none;
+  }
+  .content .navigation .nav .nav__portrait {
+    margin: 2rem 0 1rem 0;
+    height: 18rem;
+    width: auto;
+    border: 9px solid #2b2b2b;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .content .navigation .nav .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+    line-height: 1.3;
+  }
+  .content .navigation .nav .nav__items {
+    border: none;
   }
   .content .body {
     width: 75%;
@@ -159,7 +184,7 @@ body {
   opacity: 0.5;
 }
 .home__wrap .home__bg {
-  background-image: url("/media/bg.jpeg");
+  background-image: url("/media/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -243,6 +268,11 @@ body {
   border-radius: 50rem;
   margin-top: 0.5rem;
   box-shadow: none;
+}
+
+.about__wrap {
+  position: relative;
+  padding: 0 3.5vw;
 }
 
 /*# sourceMappingURL=style.css.map */
