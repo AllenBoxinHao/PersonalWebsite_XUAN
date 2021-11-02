@@ -14,7 +14,7 @@
   }
 
   .nav__logo {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: none;
     color: rgb(216, 216, 216);
     font-weight: 600;
@@ -39,6 +39,9 @@
   .nav__items {
     padding: 0.8rem 0;
     border-bottom: 1px solid #222;
+  }
+  .nav__items:first-child {
+    padding-top: 2.5rem;
   }
   .nav__items:last-child {
     border: none;
@@ -80,9 +83,32 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .nav {
-    flex-direction: column;
+@media screen and (min-width: 1024px) {
+  .content {
+    display: flex;
+    .navigation {
+      width: 25%;
+      
+      .nav {
+        flex-direction: column;
+        height: 100vh;
+        .social__icons {
+          bottom: 1.5rem;
+          right: auto;
+          top: auto;
+        }
+      }
+      .nav__toggler {
+        display: none;
+      }
+    }
+    .body {
+      width: 75%;
+    }
+    .collapsible__content {
+      max-height: 100vh;
+      opacity: 1;
+    }
   }
 }
 

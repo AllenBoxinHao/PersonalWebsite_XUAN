@@ -38,7 +38,7 @@ body {
   z-index: 2;
 }
 .nav .nav__logo {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: none;
   color: #d8d8d8;
   font-weight: 600;
@@ -63,6 +63,9 @@ body {
 .nav .nav__items {
   padding: 0.8rem 0;
   border-bottom: 1px solid #222;
+}
+.nav .nav__items:first-child {
+  padding-top: 2.5rem;
 }
 .nav .nav__items:last-child {
   border: none;
@@ -102,9 +105,31 @@ body {
   color: #8a3ab9;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav {
+@media screen and (min-width: 1024px) {
+  .content {
+    display: flex;
+  }
+  .content .navigation {
+    width: 25%;
+  }
+  .content .navigation .nav {
     flex-direction: column;
+    height: 100vh;
+  }
+  .content .navigation .nav .social__icons {
+    bottom: 1.5rem;
+    right: auto;
+    top: auto;
+  }
+  .content .navigation .nav__toggler {
+    display: none;
+  }
+  .content .body {
+    width: 75%;
+  }
+  .content .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
   }
 }
 .collapsible__content {
@@ -137,7 +162,7 @@ body {
   background-image: url("/media/bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center 0px;
   position: absolute;
   z-index: 0;
