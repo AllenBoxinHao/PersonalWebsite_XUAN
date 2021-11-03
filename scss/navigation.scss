@@ -23,7 +23,7 @@
       font-weight: 600;
     }
     .menu__icon {
-      font-size: 5rem;
+      font-size: 3rem;
       color: rgb(238, 238, 238);
       margin-right: 2rem;
       margin-left: auto;
@@ -62,11 +62,12 @@
 
     .social__icons {
       position: absolute;
-      font-size: 5rem;
+      font-size: 2rem;
       color: black;
       opacity: 0.8;
       right: 9rem;
-      top: 0;
+      margin-top: auto;
+      margin-bottom: auto;
       .fab {
         padding: 0 0.7rem;
       }
