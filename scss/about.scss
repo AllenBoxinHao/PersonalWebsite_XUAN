@@ -1,6 +1,9 @@
 .about__wrap {
   margin: 0 10vw;
   padding: 0 3.5vw;
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+  }
   .text--primary {
     color: var(--color-primary);
   }
@@ -21,6 +24,9 @@
       width: 100%;
       text-align: center;
       margin: 0;
+      @media screen and (min-width: 1024px) {
+        font-size: 10rem;
+      }
     }
     .text--title {
       font-weight: 600;
@@ -47,33 +53,77 @@
     .content--primary {
       text-align: center;
       width: 100%;
+      @media screen and (min-width: 1024px) {
+        text-align: left;
+        width: 67%;
+        padding-right: 2rem;
+        box-sizing: border-box;
+      }
       .content--title {
         font-weight: 600;
-        font-size: calc(1.5rem + 1vw);
+        font-size: calc(1.3rem + 1vw);
         margin-bottom: 1rem;
       }
       p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 1.5;
       }
     }
     .content--secondary {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-top: 3rem;
       width: 100%;
-      max-width: 100%;
+      @media screen and (min-width: 1024px) {
+        text-align: left;
+        width: 33%;
+        padding-left: 1rem;
+        box-sizing: border-box;
+        margin-top: 1.5rem;
+      }
       .content__list {
         list-style: none;
         padding: 0;
         margin: 0 0 1.5rem 0;
-        li{
-            border-bottom: 1px solid rgba(228, 222, 212, 0.712);
-            padding: 1rem 0;
+        li {
+          border-bottom: 1px solid rgba(228, 222, 212, 0.712);
+          padding: 1.5rem 0;
         }
-        li:last-of-type{
-            border: none;
+        li:last-of-type {
+          border: none;
         }
       }
-
+    }
+  }
+  .content--tertiary {
+    margin-top: 3rem;
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+      .brands {
+        padding: 2rem 0;
+        width: 25%;
+        max-width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+        text-align: center;
+        &:nth-child(2) {
+          border-left: 1px dotted gray;
+          border-right: 1px dotted gray;
+        }
+        &:nth-child(3) {
+          border-right: 1px dotted gray;
+        }
+        .counter {
+          font-weight: 500;
+          line-height: 1.3;
+          font-size: calc(1.5rem + 2vw);
+          color: rgb(51, 51, 51);
+          display: block;
+        }
+        .desc {
+          font-size: calc(1rem + 0.5vw);
+        }
+      }
     }
   }
 }
