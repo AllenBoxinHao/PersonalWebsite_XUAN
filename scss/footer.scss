@@ -1,0 +1,46 @@
+#footer {
+  padding: 4rem 0;
+  .text--primary {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: rgb(59, 177, 132);
+    }
+  }
+  .footer__wrap {
+    margin: 0 10vw;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      .copyright {
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+        font-size: 1.7rem;
+      }
+      .terms {
+        width: 100%;
+        font-size: 1.5rem;
+        .terms__list {
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          .list__items {
+            padding: 0 1rem;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: var(--color-primary);
+            }
+            &:first-of-type {
+              border-right: 1px solid rgb(187, 187, 187);
+            }
+          }
+        }
+      }
+    }
+  }
+}

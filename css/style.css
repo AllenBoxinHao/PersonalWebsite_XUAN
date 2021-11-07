@@ -643,4 +643,51 @@ body {
   margin-top: 2rem;
 }
 
+#footer {
+  padding: 4rem 0;
+}
+#footer .text--primary {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+#footer .text--primary:hover {
+  color: #3bb184;
+}
+#footer .footer__wrap {
+  margin: 0 10vw;
+}
+#footer .footer__wrap .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .footer__wrap .row .copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-size: 1.7rem;
+}
+#footer .footer__wrap .row .terms {
+  width: 100%;
+  font-size: 1.5rem;
+}
+#footer .footer__wrap .row .terms .terms__list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+#footer .footer__wrap .row .terms .terms__list .list__items {
+  padding: 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+#footer .footer__wrap .row .terms .terms__list .list__items:hover {
+  color: var(--color-primary);
+}
+#footer .footer__wrap .row .terms .terms__list .list__items:first-of-type {
+  border-right: 1px solid #bbbbbb;
+}
+
 /*# sourceMappingURL=style.css.map */
