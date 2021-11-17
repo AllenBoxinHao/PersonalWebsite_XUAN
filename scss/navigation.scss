@@ -11,11 +11,13 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 1.2rem 1.5rem;
-
+    @media screen and (max-width:576px){
+      height: 9rem;
+      align-items: flex-start;
+    }
     .nav__portrait {
       display: none;
     }
-
     .nav__logo {
       font-size: 2.5rem;
       text-decoration: none;
@@ -38,6 +40,9 @@
       width: 100%;
       padding-left: 0;
       margin: 0;
+      .active {
+        color: var(--color-primary);
+      }
     }
     .nav__items {
       padding: 0.8rem 0;
@@ -67,7 +72,10 @@
       opacity: 0.8;
       right: 9rem;
       top: 1.5rem;
-    
+      @media screen and (max-width:576px){
+        left: 1rem;
+        top: 5rem;
+      }
       .fab {
         padding: 0 0.7rem;
       }
