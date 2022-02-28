@@ -11,10 +11,7 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 1.2rem 1.5rem;
-    @media screen and (max-width:576px){
-      height: 9rem;
-      align-items: flex-start;
-    }
+
     .nav__portrait {
       display: none;
     }
@@ -72,9 +69,8 @@
       opacity: 0.8;
       right: 9rem;
       top: 1.5rem;
-      @media screen and (max-width:576px){
-        left: 1rem;
-        top: 5rem;
+      @media screen and (max-width: 576px) {
+        display: none;
       }
       .fab {
         padding: 0 0.7rem;

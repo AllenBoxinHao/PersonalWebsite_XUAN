@@ -40,12 +40,6 @@ body {
   align-items: center;
   padding: 1.2rem 1.5rem;
 }
-@media screen and (max-width: 576px) {
-  .navigation .nav {
-    height: 9rem;
-    align-items: flex-start;
-  }
-}
 .navigation .nav .nav__portrait {
   display: none;
 }
@@ -106,8 +100,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .navigation .nav .social__icons {
-    left: 1rem;
-    top: 5rem;
+    display: none;
   }
 }
 .navigation .nav .social__icons .fab {
