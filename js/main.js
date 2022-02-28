@@ -3,6 +3,15 @@ function toggle() {
   collapsible.classList.toggle("collapsible--expanded");
 }
 
+const menuItems = document.querySelectorAll(".menu__link");
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener("click", (e) => {
+    menuItems.forEach((item) => item.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+  });
+});
+
 function filterProjects(p) {
   const projects = document.querySelectorAll(".portfolio__items div");
   let filter = p.target.dataset.filter;
@@ -15,13 +24,4 @@ function filterProjects(p) {
         : project.classList.add("hidden");
     });
   }
-}
-
-const btns = document.querySelectorAll(".menu__link");
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    let current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
 }
