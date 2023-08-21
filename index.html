@@ -1,382 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:site_name"
-      content="Xuan Chang | Professional Business Analyst"
-    />
-    <meta
-      property="og:image"
-      content="https://buggodie-my-upload.s3.ap-southeast-2.amazonaws.com/website.webp"
-    />
-    <meta property="og:url" content="https://xuanchang.netlify.app/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:image"
-      content="https://buggodie-my-upload.s3.ap-southeast-2.amazonaws.com/website.webp"
-    />
-    <title>Xuan Chang | Professional Business Analyst</title>
-    <meta
-      name="description"
-      content="A personal website created for my partner Xuan"
-    />
-    <meta
-      property="og:title"
-      content="Xuan Chang | Professional Business Analyst"
-    />
-    <meta
-      property="og:description"
-      content="A personal website created for my partner Xuan"
-    />
-    <meta
-      name="twitter:title"
-      content="Xuan Chang | Professional Business Analyst"
-    />
-    <meta
-      name="twitter:description"
-      content="A personal website created for my partner Xuan"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/9a66447899.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <section class="content">
-      <header class="navigation">
-        <nav id="collapsible" class="nav collapsible">
-          <a href="/"
-            ><img class="nav__portrait" src="./media/portrait.webp" />
-          </a>
-          <a class="nav__logo" href="/">Xuan Chang</a>
-          <span class="social__icons">
-            <i class="fab fa-facebook" title="Facebook"></i>
-            <i class="fab fa-twitter" title="Twitter"></i>
-            <i class="fab fa-linkedin" title="Linkedin"></i>
-            <i class="fab fa-instagram" title="Instagram"></i>
-          </span>
-          <i class="fas fa-bars menu__icon nav__toggler" onclick="toggle()"></i>
-          <ul class="nav__list collapsible__content">
-            <li class="nav__items"><a href="#home" class="active">Home</a></li>
-            <li class="nav__items"><a href="#about">About Me</a></li>
-            <li class="nav__items"><a href="#services">What I Do</a></li>
-            <li class="nav__items"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav__items"><a href="#testimonial">Testimonial</a></li>
-            <li class="nav__items"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="body">
-        <section id="home">
-          <div class="home__wrap">
-            <div class="home__mask"></div>
-            <div class="home__bg"></div>
-            <article class="home__content">
-              <div class="container">
-                <h1 class="tx--2">Welcome</h1>
-                <span class="tx--1">I'm Xuan Chang.</span>
-                <span class="tx--3">based in Sydney, Australia.</span>
-                <a href="#contact" class="btn btn--primary">Hire Me</a>
-              </div>
-            </article>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Xuan Chang | Professional Business Analyst" />
+        <meta
+            property="og:image"
+            content="https://buggodie-my-upload.s3.ap-southeast-2.amazonaws.com/website.webp"
+        />
+        <meta property="og:url" content="https://xuanchang.netlify.app/" />
+        <title>Xuan Chang | Professional Business Analyst</title>
+        <meta name="description" content="Xuan Chang | Business Analyst at The CommonWealth Bank" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+    </head>
+    <body>
+        <section class="content">
+            <header class="navigation">
+                <nav id="collapsible" class="nav collapsible">
+                    <a href="/"><img class="nav__portrait" src="media/portrait.webp" /> </a>
+                    <a class="nav__logo" href="/">Xuan Chang</a>
+                    <span class="social__icons">
+                        <i class="bi bi-facebook" title="Facebook"></i>
+                        <i class="bi bi-twitter" title="Twitter"></i>
+                        <i class="bi bi-linkedin" title="Linkedin"></i>
+                        <i class="bi bi-instagram" title="Instagram"></i>
+                    </span>
+                    <i class="bi bi-list menu__icon nav__toggler" onclick="toggle()"></i>
+                    <ul class="nav__list collapsible__content">
+                        <li class="nav__items">
+                            <a href="#home" class="nav__links active">Home</a>
+                        </li>
+                        <li class="nav__items"><a href="#about" class="nav__links">About Me</a></li>
+                        <li class="nav__items">
+                            <a href="#services" class="nav__links">What I Do</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#experience" class="nav__links">Experience</a>
+                        </li>
+                        <!-- <li class="nav__items">
+                            <a href="#testimonial" class="nav__links">Testimonial</a>
+                        </li> -->
+                        <li class="nav__items">
+                            <a href="#contact" class="nav__links">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="body">
+                <section id="home" class="section">
+                    <div class="home__wrap">
+                        <div class="home__mask"></div>
+                        <div class="home__bg"></div>
+                        <article class="home__content">
+                            <div class="home__content__container">
+                                <h1 class="tx--2">Welcome</h1>
+                                <span class="tx--1 typing__animation--1">I'm Xuan Chang.</span>
+                                <span class="tx--3 typing__animation--2"
+                                    >based in Sydney, Australia.</span
+                                >
+                                <a href="#contact" class="btn btn--primary">Contact Me</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section id="about" class="section">
+                    <div class="about__wrap">
+                        <div class="about__header">
+                            <h2 class="text--bg">About Me</h2>
+                            <p class="text--title">
+                                Know Me More<span class="separator__line"></span>
+                            </p>
+                        </div>
+                        <article class="about__content">
+                            <div class="content--primary">
+                                <h2 class="content--title">
+                                    I'm <span class="text--primary">Xuan Chang</span>, a Business
+                                    Analyst
+                                </h2>
+                                <p>
+                                    Motivated and detail-oriented Business Analyst with a proven
+                                    track record in stakeholder engagement and expertise in agile
+                                    methodology.
+                                </p>
+                                <p>
+                                    Possesses advanced proficiency in tools such as Excel and Power
+                                    BI, enabling comprehensive data analysis and interpretation.
+                                    Effective communicator with the ability to articulate findings
+                                    to stakeholders, driving project success through problem-solving
+                                    and process improvement initiatives.
+                                </p>
+                            </div>
+                            <div class="content--secondary">
+                                <ul class="content__list">
+                                    <li><b>Name:</b> Xuan Chang</li>
+                                    <li>
+                                        <b>Email:</b>
+                                        <span class="text--primary emailLink" id="emailLink"
+                                            >xuan.chang15@gmail.com</span
+                                        >
+                                    </li>
+                                    <li class="border--0"><b>From:</b> Beijing, China</li>
+                                </ul>
+                                <a href="#" class="btn btn--secondary">Download CV</a>
+                            </div>
+                        </article>
+                        <div class="content--tertiary">
+                            <div class="content__row">
+                                <div class="brands">
+                                    <span class="counter"> 2+ </span>
+                                    <span class="desc"> Years Experience </span>
+                                </div>
+                                <div class="brands">
+                                    <span class="counter"> 10+ </span>
+                                    <span class="desc"> Projects Done </span>
+                                </div>
+                                <div class="brands">
+                                    <span class="counter"> 5+ </span>
+                                    <span class="desc"> Certificates </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="services" class="section">
+                    <div class="services__wrap">
+                        <div class="services__header">
+                            <h2 class="text--bg">Services</h2>
+                            <p class="text--title">
+                                What I Do?<span class="separator__line"></span>
+                            </p>
+                        </div>
+                        <div class="services__content">
+                            <article class="skills">
+                                <div class="skills__image"><i class="bi bi-newspaper"></i></div>
+                                <div class="skills__body">
+                                    <h3 class="skills__title">Requirements Gathering</h3>
+                                    <p class="skills__desc">
+                                        Proficient in eliciting, documenting, and prioritizing
+                                        business and functional requirements, ensuring alignment
+                                        between stakeholders and project goals.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="skills">
+                                <div class="skills__image"><i class="bi bi-laptop"></i></div>
+                                <div class="skills__body">
+                                    <h3 class="skills__title">Data Analysis</h3>
+                                    <p class="skills__desc">
+                                        Skilled in analyzing complex datasets to identify trends,
+                                        patterns, and insights, supporting data-driven
+                                        decision-making and optimizing business processes.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="skills">
+                                <div class="skills__image"><i class="bi bi-diagram-3"></i></div>
+                                <div class="skills__body">
+                                    <h3 class="skills__title">Process Mapping</h3>
+                                    <p class="skills__desc">
+                                        Experienced in creating detailed process maps and workflows
+                                        to visualize current and future states, facilitating process
+                                        improvement and streamlining initiatives.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="skills">
+                                <div class="skills__image">
+                                    <i class="bi bi-person-video2"></i>
+                                </div>
+                                <div class="skills__body">
+                                    <h3 class="skills__title">Stakeholder Management</h3>
+                                    <p class="skills__desc">
+                                        Adept at fostering strong working relationships with
+                                        cross-functional teams, translating technical concepts for
+                                        non-technical stakeholders, and facilitating effective
+                                        communication to achieve project objectives.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section id="experience" class="section">
+                    <div class="experience__wrap">
+                        <div class="experience__header">
+                            <h2 class="text--bg">Experience</h2>
+                            <p class="text--title">
+                                My Experience<span class="separator__line"></span>
+                            </p>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__sections">
+                                <div class="experience__icon">
+                                    <i class="bi bi-mortarboard"></i>
+                                </div>
+                                <div class="experience__boxes">
+                                    <h3 class="experience__location">University of Melbourne</h3>
+                                    <p class="experience__title">
+                                        <b>Master of Information System</b>
+                                    </p>
+                                    <p class="experience__details">
+                                        Completed core coursework in Business Analysis and Decision
+                                        Making/ Professional IS Consulting/ IT Project Management/
+                                        Database System & Information Modelling.
+                                    </p>
+                                    <p class="experience__period"><b>2017 - 2019</b></p>
+                                </div>
+                                <div class="experience__boxes">
+                                    <h3 class="experience__location">University of Liverpool</h3>
+                                    <p class="experience__title">
+                                        <b>Bachelor of Arts in Business Management</b>
+                                    </p>
+                                    <p class="experience__details">
+                                        Completed core coursework in International Finance/ Services
+                                        Marketing/ Corporate Social Responsibility/
+                                        Entrepreneurship/ Statistics.
+                                    </p>
+                                    <p class="experience__period"><b>2015 - 2017</b></p>
+                                </div>
+                            </div>
+                            <div class="experience__sections">
+                                <div class="experience__icon">
+                                    <i class="bi bi-briefcase"></i>
+                                </div>
+                                <div class="experience__boxes">
+                                    <h3 class="experience__location">Commonwealth Bank</h3>
+                                    <p class="experience__title">
+                                        <b>Business Analyst</b>
+                                    </p>
+                                    <p class="experience__details">
+                                        Business analyst with hands on experience in end to end
+                                        remediation incidents and project ownership within banking
+                                        services sector.
+                                    </p>
+                                    <p class="experience__period"><b>2023 - PRESENT</b></p>
+                                </div>
+                                <div class="experience__boxes">
+                                    <h3 class="experience__location">Harvey Norman</h3>
+                                    <p class="experience__title"><b>Data Analyst</b></p>
+                                    <p class="experience__details">
+                                        Extract, interpret and analyse data to identify key metrics
+                                        and transform raw data into meaningful, actionable
+                                        information.
+                                    </p>
+                                    <p class="experience__period"><b>2021 - 2022</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" class="section">
+                    <div class="contact__wrap">
+                        <div class="contact__header">
+                            <h2 class="text--bg">Contact</h2>
+                            <p class="text--title">
+                                Get in Touch<span class="separator__line"></span>
+                            </p>
+                        </div>
+                        <div class="contact__content">
+                            <div class="contact__address">
+                                <h2 class="contact__title">Address</h2>
+                                <p class="contact__desc">21 James Street, Lidcombe</p>
+                                <p class="contact__methods">
+                                    <i class="bi bi-phone"></i>(+61)424113256
+                                </p>
+                                <p class="contact__methods">
+                                    <i class="bi bi-envelope"></i>xuan.chang15@gmail.com
+                                </p>
+                                <h2 class="contact__title">Follow Me</h2>
+                                <span class="social__icons">
+                                    <i class="bi bi-facebook" title="Facebook"></i>
+                                    <i class="bi bi-twitter" title="Twitter"></i>
+                                    <i class="bi bi-linkedin" title="Linkedin"></i>
+                                    <i class="bi bi-instagram" title="Instagram"></i>
+                                </span>
+                            </div>
+                            <div class="contact__message">
+                                <h2 class="contact__title">Send me an email</h2>
+                                <form id="contact__form" action="" method="post">
+                                    <div class="form">
+                                        <input
+                                            name="name"
+                                            type="text"
+                                            class="form-control"
+                                            required
+                                            placeholder="Name"
+                                        />
+                                        <input
+                                            name="email"
+                                            type="email"
+                                            class="form-control"
+                                            required
+                                            placeholder="Email"
+                                        />
+                                        <textarea
+                                            name="message"
+                                            class="form-control"
+                                            rows="5"
+                                            required
+                                            placeholder="Tell me about anything..."
+                                        ></textarea>
+                                    </div>
+                                </form>
+                                <p class="button__submit">
+                                    <button
+                                        id="submit__form"
+                                        class="btn btn--secondary"
+                                        type="submit"
+                                    >
+                                        Send Message
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer id="footer" class="section">
+                    <div class="footer__wrap">
+                        <div class="row">
+                            <p class="copyright">Copyright &copy 2023. All Rights Reserved.</p>
+                            <span class="terms">
+                                <ul class="terms__list">
+                                    <li class="list__items">Terms & Policy</li>
+                                    <li class="list__items">Disclaimer</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </footer>
+            </section>
         </section>
-        <section id="about" class="section">
-          <div class="about__wrap">
-            <div class="about__header">
-              <h2 class="text--bg">About Me</h2>
-              <p class="text--title">
-                Know Me More<span class="separator__line"></span>
-              </p>
-            </div>
-            <article class="about__content">
-              <div class="content--primary">
-                <h2 class="content--title">
-                  I'm <span class="text--primary">Xuan Chang</span>, a Business
-                  Analyst
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatum reprehenderit fuga, veniam architecto tempora sequi
-                  earum repellendus in minus eius!
-                </p>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  officiis assumenda consequatur eveniet aliquam dolorem aliquid
-                  similique molestiae placeat explicabo necessitatibus nobis
-                  obcaecati veniam nostrum sed quae adipisci, enim a dicta
-                  reprehenderit odit soluta. Amet tempora placeat reiciendis,
-                  architecto error quaerat ab fugit est fugiat fuga voluptatem.
-                  Dolor, eum dignissimos.
-                </p>
-              </div>
-              <div class="content--secondary">
-                <ul class="content__list">
-                  <li><b>Name:</b> Xuan Chang</li>
-                  <li>
-                    <b>Email:</b>
-                    <span class="text--primary">xuan.chang15@gmail.com</span>
-                  </li>
-                  <li><b>Age:</b> 27</li>
-                  <li class="border--0"><b>From:</b> Beijing, China</li>
-                </ul>
-                <a href="#" class="btn btn--secondary">Download CV</a>
-              </div>
-            </article>
-            <div class="content--tertiary">
-              <div class="row">
-                <div class="brands">
-                  <span class="counter"> 2+ </span>
-                  <span class="desc"> Years Experience </span>
-                </div>
-                <div class="brands">
-                  <span class="counter"> 20+ </span>
-                  <span class="desc"> Happy Clients </span>
-                </div>
-                <div class="brands">
-                  <span class="counter"> 10+ </span>
-                  <span class="desc"> Projects Done </span>
-                </div>
-                <div class="brands">
-                  <span class="counter"> 5+ </span>
-                  <span class="desc"> Certificates </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="services" class="section">
-          <div class="services__wrap">
-            <div class="services__header">
-              <h2 class="text--bg">Services</h2>
-              <p class="text--title">
-                What I Do?<span class="separator__line"></span>
-              </p>
-            </div>
-            <div class="services__content">
-              <article class="skills">
-                <div class="skills__image"><i class="fas fa-laptop"></i></div>
-                <div class="skills__body">
-                  <h3 class="skills__title">Web Design</h3>
-                  <p class="skills__desc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Qui error voluptatem dignissimos quidem iusto eum ratione
-                    dolores numquam esse quisquam?
-                  </p>
-                </div>
-              </article>
-              <article class="skills">
-                <div class="skills__image"><i class="fas fa-laptop"></i></div>
-                <div class="skills__body">
-                  <h3 class="skills__title">Web Design</h3>
-                  <p class="skills__desc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Qui error voluptatem dignissimos quidem iusto eum ratione
-                    dolores numquam esse quisquam?
-                  </p>
-                </div>
-              </article>
-              <article class="skills">
-                <div class="skills__image"><i class="fas fa-laptop"></i></div>
-                <div class="skills__body">
-                  <h3 class="skills__title">Web Design</h3>
-                  <p class="skills__desc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Qui error voluptatem dignissimos quidem iusto eum ratione
-                    dolores numquam esse quisquam?
-                  </p>
-                </div>
-              </article>
-              <article class="skills">
-                <div class="skills__image"><i class="fas fa-laptop"></i></div>
-                <div class="skills__body">
-                  <h3 class="skills__title">Web Design</h3>
-                  <p class="skills__desc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Qui error voluptatem dignissimos quidem iusto eum ratione
-                    dolores numquam esse quisquam?
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <section id="portfolio" class="section">
-          <div class="portfolio__wrap">
-            <div class="portfolio__header">
-              <h2 class="text--bg">Portfolio</h2>
-              <p class="text--title">
-                My Work<span class="separator__line"></span>
-              </p>
-            </div>
-            <div class="portfolio__content">
-              <ul class="portfolio__menu">
-                <li class="menu__items">
-                  <a
-                    data-filter="*"
-                    class="menu__link active"
-                    onclick="filterProjects(event)"
-                    >All</a
-                  >
-                </li>
-                <li class="menu__items">
-                  <a
-                    data-filter="design"
-                    class="menu__link"
-                    onclick="filterProjects(event)"
-                    >Design</a
-                  >
-                </li>
-                <li class="menu__items">
-                  <a
-                    data-filter="brand"
-                    class="menu__link"
-                    onclick="filterProjects(event)"
-                    >Brand</a
-                  >
-                </li>
-                <li class="menu__items">
-                  <a
-                    data-filter="photos"
-                    class="menu__link"
-                    onclick="filterProjects(event)"
-                    >Photos</a
-                  >
-                </li>
-              </ul>
-              <div class="portfolio__items">
-                <div class="portfolio__img design">
-                  <img class="imgs" src="./media/img1.jpg" />
-                  <span class="imgs__desc__layer">
-                    <p class="imgs__desc">Project 1</p>
-                  </span>
-                </div>
-                <div class="portfolio__img brand">
-                  <img class="imgs" src="./media/img2.jpg" />
-                  <span class="imgs__desc__layer">
-                    <p class="imgs__desc">Project 2</p>
-                  </span>
-                </div>
-                <div class="portfolio__img photos">
-                  <img class="imgs" src="./media/img3.jpg" />
-                  <span class="imgs__desc__layer">
-                    <p class="imgs__desc">Project 3</p>
-                  </span>
-                </div>
-                <div class="portfolio__img design photos">
-                  <img class="imgs" src="./media/img4.jpg" />
-                  <span class="imgs__desc__layer">
-                    <p class="imgs__desc">Project 4</p>
-                  </span>
-                </div>
-                <div class="portfolio__img brand photps">
-                  <img class="imgs" src="./media/img5.jpg" />
-                  <span class="imgs__desc__layer">
-                    <p class="imgs__desc">Project 5</p>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="contact" class="section">
-          <div class="contact__wrap">
-            <div class="contact__header">
-              <h2 class="text--bg">Contact</h2>
-              <p class="text--title">
-                Get in Touch<span class="separator__line"></span>
-              </p>
-            </div>
-            <div class="contact__content">
-              <div class="contact__address">
-                <h2 class="contact__title">Address</h2>
-                <p class="contact__desc">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
-                  perferendis.
-                </p>
-                <p class="contact__methods">
-                  <i class="fas fa-phone"></i>(+61)452040000
-                </p>
-                <p class="contact__methods">
-                  <i class="fas fa-envelope"></i>xuan.chang15@gmail.com
-                </p>
-                <h2 class="contact__title">Follow Me</h2>
-                <span class="social__icons">
-                  <i class="fab fa-facebook" title="Facebook"></i>
-                  <i class="fab fa-twitter" title="Twitter"></i>
-                  <i class="fab fa-linkedin" title="Linkedin"></i>
-                  <i class="fab fa-instagram" title="Instagram"></i>
-                </span>
-              </div>
-              <div class="contact__message">
-                <h2 class="contact__title">Send us a note</h2>
-                <form id="contact__form" action="" method="post">
-                  <div class="form">
-                    <input
-                      name="name"
-                      type="text"
-                      class="form-control"
-                      required
-                      placeholder="Name"
-                    />
-                    <input
-                      name="email"
-                      type="email"
-                      class="form-control"
-                      required
-                      placeholder="Email"
-                    />
-                    <textarea
-                      name="message"
-                      class="form-control"
-                      rows="5"
-                      required
-                      placeholder="Tell me about anything..."
-                    ></textarea>
-                  </div>
-                </form>
-                <p class="button__submit">
-                  <button
-                    id="submit__form"
-                    class="btn btn--secondary"
-                    type="submit"
-                  >
-                    Send Message
-                  </button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <footer id="footer" class="section">
-          <div class="footer__wrap">
-            <div class="row">
-              <p class="copyright">
-                Copyright &copy 2021
-                <a href="#" class="text--primary">Xuan.</a> All Rights Reserved.
-              </p>
-              <span class="terms">
-                <ul class="terms__list">
-                  <li class="list__items">Terms & Policy</li>
-                  <li class="list__items">Disclaimer</li>
-                </ul>
-              </span>
-            </div>
-          </div>
-        </footer>
-      </section>
-    </section>
-    <script src="/js/main.js"></script>
-  </body>
+        <script src="js/main.js"></script>
+    </body>
 </html>

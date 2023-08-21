@@ -1,0 +1,57 @@
+@import "./scss/navigation.scss";
+@import "./scss/btn.scss";
+@import "./scss/home.scss";
+@import "./scss/about.scss";
+@import "./scss/services.scss";
+@import "./scss/contact.scss";
+@import "./scss/footer.scss";
+@import "./scss/experience.scss";
+
+:root {
+    --color-headings: rgb(243, 243, 243);
+    --color-primary: rgb(70, 202, 151);
+    --color-secondary: rgb(187, 0, 0);
+    --color-background: rgba(245, 242, 234, 0.671);
+}
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    margin: 0;
+}
+.section {
+    padding: 4.5rem 0;
+    overflow: hidden;
+    &:nth-of-type(odd) {
+        background-color: var(--color-background);
+    }
+    &:first-child {
+        background-color: #ffffff;
+        padding-top: 0;
+    }
+}
+@mixin typing__animation__base {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+}
+.typing__animation--1 {
+    @include typing__animation__base();
+    animation: typing 2s ease-in forwards, blink-caret 1s infinite;
+}
+.typing__animation--2 {
+    @include typing__animation__base();
+    animation: typing 2s ease-in 2s forwards, blink-caret 1s infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
