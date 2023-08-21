@@ -12,11 +12,11 @@ menuItems.forEach((menuItem) => {
     });
 });
 
-const navIinks = document.querySelectorAll(".nav__links");
+const navLinks = document.querySelectorAll(".nav__links");
 
-navIinks.forEach((navIink) => {
-    navIink.addEventListener("click", (e) => {
-        navIinks.forEach((item) => item.classList.remove("active"));
+navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", (e) => {
+        navLinks.forEach((item) => item.classList.remove("active"));
         e.currentTarget.classList.add("active");
     });
 });
