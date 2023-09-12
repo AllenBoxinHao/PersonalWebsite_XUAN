@@ -14,8 +14,6 @@
 }
 .navigation .nav .nav__portrait {
   display: none;
-  width: 100%;
-  height: auto;
 }
 .navigation .nav .nav__logo {
   font-size: 2.5rem;
